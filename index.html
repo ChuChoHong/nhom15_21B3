@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới Thiệu Thành Viên</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="background"></div>
+    <div class="container">
+        <h1 class="title">Giới Thiệu Thành Viên</h1>
+
+        <div class="member">
+            <img src="avatar1.jpg" alt="Huỳnh Anh Tú">
+            <h2>Huỳnh Anh Tú</h2>
+            <p>Vai trò: Trưởng nhóm - Frontend</p>
+            <button onclick="showDetails(
+                'Huỳnh Anh Tú', 'Trưởng nhóm - Frontend',
+                'MSSV: 2180603928', 'Lớp: 21DTHB3',
+                'SĐT: 0917359340', 'Email: huynhanhtu18@gmail.com',
+                'GitHub: https://github.com/ChuChoHong'
+            )">Xem thêm</button>
+        </div>
+
+        <div class="member">
+            <img src="avatar2.jpg" alt="Phan Thái Ngân">
+            <h2>Phan Thái Ngân</h2>
+            <p>Vai trò: Frontend</p>
+            <button onclick="showDetails(
+                'Phan Thái Ngân', 'Frontend',
+                'MSSV: 2180602645', 'Lớp: 21DTHB3',
+                'SĐT: 0335418843', 'Email: nganphan.1545@gmail.com',
+                'GitHub: https://github.com/Tngan103'
+            )">Xem thêm</button>
+        </div>
+
+        <div class="member">
+            <img src="avatar3.jpg" alt="Hà Thị Thu Thủy">
+            <h2>Hà Thị Thu Thủy</h2>
+            <p>Vai trò: Backend</p>
+            <button onclick="showDetails(
+                'Hà Thị Thu Thủy', 'Backend',
+                'MSSV: 2180601544', 'Lớp: 21DTHB3',
+                'SĐT: 0865110203', 'Email: hathithuthuy085462341@gmail.com',
+                'GitHub: https://github.com/Thuthuy100103'
+            )">Xem thêm</button>
+        </div>
+
+        <div class="member">
+            <img src="Tuananh.jpg" alt="Đinh Hồ Tuấn Anh">
+            <h2>Đinh Hồ Tuấn Anh</h2>
+            <p>Vai trò: Backend</p>
+            <button onclick="showDetails(
+                'Đinh Hồ Tuấn Anh', 'Backend',
+                'MSSV: 2180601901', 'Lớp: 21DTHB3',
+                'SĐT: 0919744788', 'Email: tuananh212409@gmail.com',
+                'GitHub: https://github.com/Bixinhzai'
+            )">Xem thêm</button>
+        </div>
+    </div>
+
+    <!-- Modal hiển thị thông tin chi tiết -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p id="modal-role"></p>
+            <p id="modal-mssv"></p>
+            <p id="modal-class"></p>
+            <p id="modal-phone"></p>
+            <p id="modal-email"></p>
+            <p id="modal-github"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
